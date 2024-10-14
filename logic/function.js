@@ -1,5 +1,3 @@
-let password = document.getElementById('userPassword').value;
-
 // FUNZIONE PER LA LUNGHEZZA
 function passwordLength(password, className) {
     if (password.length >= 9) {
@@ -46,12 +44,3 @@ function noChecked(className) {
     document.querySelector(`#${className} .fa-xmark`).classList.remove('none');
     document.querySelector(`#${className} .fa-check`).classList.add('none');
 }
-
-// Aggiungi un EventListener all'input della password
-document.getElementById('userPassword').addEventListener('input', function () {
-    password = this.value;
-    passwordLength(password, 'length')
-    UppercasePassword(password, 'upperCase')
-    number(password, 'number')
-    specialCase(password, 'specialCase')
-});
