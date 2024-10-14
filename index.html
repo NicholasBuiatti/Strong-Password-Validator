@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di Password</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="card">
+        <h1>Verifica della Password</h1>
+        <div class="container">
+            <input type="text" required placeholder="Inserisci la tua password" id="userPassword">
+            <div>
+                <p id="length"><i class="fa-solid fa-xmark"></i><i class="fa-solid fa-check none"></i>
+                    Almeno 9
+                    caratteri</p>
+                <p id="upperCase"><i class="fa-solid fa-xmark"></i><i class="fa-solid fa-check none"></i> Almeno una
+                    maiuscola</p>
+                <p id="number"><i class="fa-solid fa-xmark"></i><i class="fa-solid fa-check none"></i> Almeno un
+                    numero</p>
+                <p id="specialCase"><i class="fa-solid fa-xmark"></i><i class="fa-solid fa-check none"></i> Almeno un
+                    carattere speciale</p>
+                <!--  -->
+            </div>
+            <div class="authBar"></div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
