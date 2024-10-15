@@ -45,9 +45,18 @@ body {
         }
     }
 
-    .authBar {
-        background-color: yellowgreen;
+    .bar {
+        border: 2px solid gray;
         height: 2rem;
+        width: 75%;
+        margin: 0 auto;
+        position: relative;
+
+        #authBar {
+            width: 0;
+            height: 1.8rem;
+            transition: width 0.25s linear;
+        }
     }
 }
 
@@ -57,4 +66,26 @@ body {
 
 .none {
     display: none !important;
+}
+
+
+/*********************** ANIMAZIONE BARRA */
+#authBar.easy {
+    width: 25% !important;
+    background-color: red;
+}
+
+#authBar.medium {
+    width: 50% !important;
+    background-color: orange;
+}
+
+#authBar.hard {
+    width: 75% !important;
+    background-color: yellow;
+}
+
+#authBar.superStrong {
+    width: 100% !important;
+    background-color: green;
 }
